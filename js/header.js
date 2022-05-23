@@ -15,13 +15,23 @@ const headerInit = () => {
         display: flex;
         justify-content: space-between;
     }
+    .WallPoster {
+        height : 800px;
+        width : 1000px;
+        margin-left : auto;
+        margin-right : auto;
+    }
+    #center {
+        margin-left : auto;
+        margin-right : auto;
+    }
     </style>
 <div class="container mx-auto flex p-5  header-class" style="align-items: center;">
     <a href="./index.html" class="flex title-font font-medium items-center text-gray-900  md:mb-0">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
         </svg>
-        <a href="./index.html"><span class="ml-3 text-xl">Shop With CJ</span></a>
+        <h1><a id="center" href="./index.html"><span class="ml-3 text-4xl">Shop with CJ</span></a></h1>
     </a>
     <a href="./cart.html">
         <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base md:mt-0">
@@ -30,7 +40,9 @@ const headerInit = () => {
             </svg>${cartCount}
         </button>
     </a>
-</div>`;
+   
+</div> <br>
+<img class="WallPoster", src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/285960-9-Best-Shoe-Brands-for-Bunions_Header.jpg?w=1155&h=1528" alt="Wall poster">`;
 };
 
 headerInit();
